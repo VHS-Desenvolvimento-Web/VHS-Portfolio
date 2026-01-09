@@ -16,7 +16,7 @@
         <div class="window-bar">
             <p>VHS Desenvolvimento Web</p>
             <div class="marks">
-                <i class="fa-solid fa-minus"></i>
+                <a onclick="openMenu()"><i class="fa-solid fa-minus"></i></a>
                 <i class="fa-solid fa-window-restore"></i>
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -25,7 +25,7 @@
         <header>
             <div class="items">
                 <a href="index.html" class="item">Início</a>
-                <a href="index.html" class="item">Serviços</a>
+                <a href="index.html#servicos" class="item">Serviços</a>
                 <a href="#" class="item">Projetos Anteriores</a>
                 <a href="#" class="item">Processo</a>
                 <a href="#" class="item">Sobre</a>
@@ -33,11 +33,78 @@
             </div>
         </header>
 
-        <div class="hero">
-            <div class=""></div>
-        </div>
+        <section>
+            <div class="hero">
+                <div class="container hero">
+                    <div class="hero-text">
+                        <h1><i class="fa-solid fa-user"></i> : Preciso de um site para o meu negócio.</h1>
+                        <h2>Então você chegou no lugar certo!</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="price-button">
+                        <h2>Solicitar Orçamento</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container servicos">
+            <div class="services" id="servicos">
+
+                <h1>Nossos Serviços</h1>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="window-bar">
+                            <p><i class="fa-solid fa-code"></i> Desenvolvimento Web</p>
+                            <div class="marks">
+                                <i class="fa-solid fa-minus"></i>
+                                <i class="fa-solid fa-window-restore"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div class="card-text">
+                        <div class="card-text">
+                            <h2>Desenvolvimento Web</h2>
+                            <p>Criação de sites personalizados, responsivos e otimizados para SEO.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="window-bar">
+                            <p><i class="fa-solid fa-paintbrush"></i> Design Gráfico</p>
+                            <div class="marks">
+                                <i class="fa-solid fa-minus"></i>
+                                <i class="fa-solid fa-window-restore"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h2>Design Gráfico</h2>
+                            <p>Design atraente e funcional para melhorar a identidade visual da sua marca.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="window-bar">
+                            <p><i class="fa-solid fa-chart-line"></i>  Oportunidade</p>
+                            <div class="marks">
+                                <i class="fa-solid fa-minus"></i>
+                                <i class="fa-solid fa-window-restore"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-text">
+                            <h2>Oportunidade</h2>
+                            <p>Aplicativos móveis intuitivos e eficientes para Android e iOS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-        <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
