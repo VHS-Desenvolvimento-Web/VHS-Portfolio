@@ -8,17 +8,17 @@
 // Sintaxe: const nomeDoArray = [valor1, valor2, valor3, ...]
 
 const cores = [
-    '#ef4848',  // Vermelho
-    '#4170ff',  // Azul Claro
-    '#5698b9',  // Ciano
+    '#7bd474',  // Verde
+    '#4170ff',  // Azul
+    '#52bbde',  // Ciano
     '#0447ff'   // Azul Royal
 ];
 
 // Agora o JavaScript sabe que existem 4 cores disponíveis
 // Você pode acessá-las assim:
-// cores[0] = '#ef4848' (primeira cor)
+// cores[0] = '#7bd474' (primeira cor)
 // cores[1] = '#4170ff' (segunda cor)
-// cores[2] = '#5698b9' (terceira cor)
+// cores[2] = '#52bbde' (terceira cor)
 // cores[3] = '#0447ff' (quarta cor)
 // cores.length = 4 (quantidade total de cores)
 
