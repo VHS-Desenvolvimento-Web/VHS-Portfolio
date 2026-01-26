@@ -12,7 +12,10 @@
     font-style: normal;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -39,13 +42,14 @@ p, h1, h2, h3 {
 body {
     margin: 0;
     padding: 0;
-    background-color: #ddd;
+    background-color: #f0f8ff;
     justify-items: center;
     align-content: center;
 }
 
 header {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -53,9 +57,10 @@ header {
     padding: 10px 20px;
     background-color: #fff;
     gap: 150px;
+    box-shadow: 0px 10px 10px #0000001a;
 }
 
-.logo img{
+.logo img {
     display: flex;
     justify-self: center;
     align-self: center;
@@ -76,7 +81,6 @@ header {
     text-decoration: none;
     color: #292929;
     padding: 8px 0px;
-    filter: drop-shadow(0px 0px 0px #00000000);
     cursor: pointer;
     position: relative;
 }
@@ -103,7 +107,7 @@ header {
     color: var(--cor-hover);
 }
 
-.item:hover > i {
+.item:hover>i {
     opacity: 1;
     translate: -30px 0px;
 }
@@ -115,4 +119,206 @@ header {
 
 .menu-icon {
     display: none;
+}
+
+@media (max-width: 1080px) {}
+
+@-webkit-keyframes bg-gradient-animation {
+    0% {
+        background-position: 69% 0%
+    }
+
+    50% {
+        background-position: 32% 100%
+    }
+
+    100% {
+        background-position: 69% 0%
+    }
+}
+
+@-moz-keyframes bg-gradient-animation {
+    0% {
+        background-position: 69% 0%
+    }
+
+    50% {
+        background-position: 32% 100%
+    }
+
+    100% {
+        background-position: 69% 0%
+    }
+}
+
+@-o-keyframes bg-gradient-animation {
+    0% {
+        background-position: 69% 0%
+    }
+
+    50% {
+        background-position: 32% 100%
+    }
+
+    100% {
+        background-position: 69% 0%
+    }
+}
+
+@keyframes bg-gradient-animation {
+    0% {
+        background-position: 69% 0%
+    }
+
+    50% {
+        background-position: 32% 100%
+    }
+
+    100% {
+        background-position: 69% 0%
+    }
+}
+
+.hero-container {
+    display: flex;
+    margin-top: 90px;
+    width: 100%;
+    height: 700px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    background: linear-gradient(342deg, #0447ff, #418dff, #52bbde);
+    background-size: 600% 600%;
+
+    -webkit-animation: bg-gradient-animation 6s ease infinite;
+    -moz-animation: bg-gradient-animation 6s ease infinite;
+    -o-animation: bg-gradient-animation 6s ease infinite;
+    animation: bg-gradient-animation 6s ease infinite;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    color: #ffffff;
+    font-size: 27px;
+    margin-bottom: 50px;
+}
+
+.saibamais-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #7bd474;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: -10px 10px 0px #00000033;
+    z-index: 1;
+}
+
+.saibamais-btn:hover {
+    translate: -10px 10px;
+    box-shadow: -0px 0px 0px #00000033;
+    transition: all 0.3s ease-out;
+}
+
+.saibamais-btn::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    translate: -20px -20px;
+    z-index: 2;
+}
+
+.saibamais-btn::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    background-color: #292929;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    translate: 20px -20px;
+    z-index: 2;
+}
+
+.saibamais-btn:hover::before {
+    opacity: 1;
+    animation: btn-circle-animation-1 2s ease-out infinite;
+}
+
+.saibamais-btn:hover::after {
+    opacity: 1;
+    animation: btn-circle-animation-2 2s ease-out infinite;
+}
+
+@keyframes btn-circle-animation-1 {
+    0% {
+        translate: 205px -20px
+    }
+
+    25% {
+        translate: 205px 55px
+    }
+
+    50% {
+        translate: -20px 55px
+    }
+
+    75% {
+        translate: -20px -20px
+    }
+
+    100% {
+        translate: 205px -20px
+    }
+}
+
+@keyframes btn-circle-animation-2 {
+    0% {
+        translate: -205px -20px
+    }
+
+    25% {
+        translate: -205px -20px
+    }
+
+    50% {
+        translate: -205px 55px
+    }
+
+    75% {
+        translate: -20px 55px
+    }
+
+    100% {
+        translate: -20px -20px
+    }
 }
