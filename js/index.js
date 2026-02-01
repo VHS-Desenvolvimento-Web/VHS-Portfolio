@@ -142,19 +142,3 @@ function openMenu() {
     const nav = document.querySelector('.items');
     nav.classList.toggle('active');
 }
-
-// Sincroniza a variável CSS --btn-w com a largura real do botão
-function syncSaibaMaisWidth() {
-    const buttons = document.querySelectorAll('.saibamais-btn');
-    buttons.forEach(btn => {
-        function setVar() {
-            btn.style.setProperty('--btn-w', btn.offsetWidth + 'px');
-        }
-        setVar();
-        // Atualiza ao redimensionar
-        window.addEventListener('resize', setVar);
-    });
-}
-
-// Executa após DOM carregado
-document.addEventListener('DOMContentLoaded', syncSaibaMaisWidth);
