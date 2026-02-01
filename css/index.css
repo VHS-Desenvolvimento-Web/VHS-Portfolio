@@ -445,6 +445,19 @@ header {
     background-color: #7bd474;
 }
 
+.services-card.fourth:hover .fa-solid {
+    outline: 3px solid #012ca0;
+    transition: all 0.1s ease;
+}
+
+.services-card.fourth:hover {
+    outline: 3px solid #012ca0;
+}
+
+.services-card.fourth:hover .card-title::before {
+    background-color: #012ca0;
+}
+
 @media (max-width: 1250px) {
     .services-card .fa-solid {
         outline: 3px solid #d4d4d4;
@@ -475,16 +488,123 @@ header {
         height: 250px;
     }
 
+    .services-card p {
+        font-size: 16px;
+    }
+
     .card-title {
         font-size: 18px;
     }
 
     .card-content {
-        gap: 20px;
+        gap: 10px;
     }
 
     .card-content .fa-solid {
         width: 35px;
         height: 35px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    color: #fff;
+    background-color: #012ca0;
+    box-shadow: 0px -10px 10px #0000001a;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.footer-logo img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    height: auto;
+}
+
+.link-header, .link-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+    height: 100%;
+}
+
+.link-header a, .link-social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.link-header a:hover, .link-social a:hover {
+    text-decoration: underline;
+    color: #52bbde
+}
+
+.link-header h3, .link-social h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .footer-logo {
+        align-items: center;
+        gap: 50px;
+    }
+
+    .links {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-logo img {
+        height: 100px;
+    }
+
+    .links {
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .link-social {
+        align-items: right;
+        justify-content: right;
     }
 }
